@@ -40,7 +40,7 @@
 	 
 	 
 	 ros::Publisher pub = n.advertise<std_msgs::Bool>("activation", 1000);
-	 ros::Subscriber sub = n.subscribe("range", 1000, UltraSonarCallback);
+	 ros::Subscriber sub = n.subscribe("activate", 1000, UltraSonarCallback);
 	 
 	 
 	 while(ros::ok())
